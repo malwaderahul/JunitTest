@@ -42,12 +42,12 @@ public class MessageUtilTest {
     @Test
     public void testPrintMessage() {
         System.out.println("printMessage");
-        MessageUtil instance = null;
-        String expResult = "";
+        MessageUtil instance = new MessageUtil("Hello");
+        String expResult = "Hello";
         String result = instance.printMessage();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+        
     }
     
 }
